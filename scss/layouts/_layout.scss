@@ -26,4 +26,5 @@ html {
 body {
   // Disable in production mode;
   @include show-breakpoints;
+  @include Lora-Regular;
 }

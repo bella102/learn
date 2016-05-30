@@ -1,3 +1,6 @@
 // FONTS
 // Import all webfonts here
 //https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
+// @include font-face(wfsc, fonts / wfsc, null, null, woff woff2 eot ttf svg);
+@include font-face(Lora-Regular, fonts / Lora-Regular, null, null, woff eot ttf svg);
+@include font-face(Raleway-ExtraLight, fonts / Raleway-ExtraLight, null, null, woff eot ttf svg);
