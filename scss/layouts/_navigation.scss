@@ -1,6 +1,64 @@
 // Navigation.
-.nav {
-  ul {
-    margin-bottom: rem(10px);
+.navigation {
+  .main-menu {
+    li {
+      position: relative;
+      float: left;
+
+      &.expanded-menu {
+        &:before {
+          @include icomoon;
+          position: absolute;
+          content: "\e900";
+          right: rem(10px);
+          font-size: rem(16px);
+          bottom: 0;
+          line-height: rem(40px);
+        }
+      }
+
+      a {
+        padding: rem(10px 30px);
+        display: block;
+        text-decoration: none;
+      }
+
+      ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: $black;
+
+        li {
+          width: 200px;
+          float: none;
+
+          &.expanded-menu {
+            &:before {
+              color: rgba($white, .6);
+              right: rem(10px);
+              line-height: rem(35px);
+            }
+          }
+
+          a {
+            color: rgba($white, .6);
+            padding: rem(8px 15px);
+          }
+        }
+
+        ul {
+          top:0;
+          left:100%;
+        }
+      }
+
+      &:hover {
+        > ul {
+          display: block;
+        }
+      }
+    }
   }
 }
