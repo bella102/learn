@@ -12,14 +12,14 @@
   <body>
 
     {% block header %}
+      {% include 'header.twig' %}
       {% include 'navigation.twig' %}
-      <h1>{% block title %}{% endblock %}</h1>
     {% endblock %}
 
     {% block content %}{% endblock %}
 
     {% block footer %}
-      <footer>This is a footer</footer>
+      {% include "footer.twig" %}
     {% endblock %}
 
     {% include "../blocks/index-links.twig" %}
