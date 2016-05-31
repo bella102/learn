@@ -6,6 +6,7 @@
       <title>{{ site_title }} - {% block title %}{% endblock %}</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       {% include '../blocks/favicons.twig' %}
+      <link rel="stylesheet" href="css/animate.css">
       <link rel="stylesheet" href="css/styles.css">
     {% endblock %}
   </head>
@@ -13,7 +14,6 @@
 
     {% block header %}
       {% include 'header.twig' %}
-      {% include 'navigation.twig' %}
     {% endblock %}
 
     {% block content %}{% endblock %}

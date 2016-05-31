@@ -1,0 +1,15 @@
+.header {
+  .logo {
+    @include susy-media(tablet) {
+      @include span(3 of $susy-desktop);
+
+    }
+  }
+
+  .navigation {
+    @include susy-media(tablet) {
+      @include span(9 of $susy-desktop);
+      @include last;
+    }
+  }
+}
