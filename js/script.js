@@ -18,4 +18,10 @@
 
   // Add  functionality here.
 
+  var widthScreen = $(window).width();
+  console.log(widthScreen);
+  if($('.main-menu li:hover')) {
+    console.log(widthScreen);
+  }
+
 }(this, this.document, this.jQuery));

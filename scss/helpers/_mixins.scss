@@ -101,6 +101,13 @@
   user-select: none;
 }
 
+@mixin list-fade-in-down($cols, $speed) {
+  @for $i from 1 through $cols {
+    &:nth-child(#{$cols}n + #{$i}) {
+      transition-delay: #{($i * $speed)}ms;
+    }
+  }
+}
 
 // Clearfix as mixin.
 @mixin clearfix {
